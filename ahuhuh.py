@@ -20,11 +20,19 @@ class Lista:
     def alterar(self):
         modificar = input("Informe o código do produto")
         for i in range(len(self.listaProdutos)):
-            if modificar == self.listaProdutos[i].cod
+            if modificar == str(self.listaProdutos[i].cod)
                 self.listaProdutos[i].descricao = input('Digite outra descricao')
 
 
 
+    def cadastrar(self):
+        cod_informado = int(input('Informe o código do fabricante: '))
+        for j in range(len(self.listaFabricantes)):
+            if cod_informado == self.listaFabricantes[j].cod_fabricante:
+                cod = len(self.listaProdutos)+1
+                descricao = input('Informe a descrição do produto: ')
+                objeto = self.listaFabricantes[j]
+                self.listaProdutos(Produto(cod = cod, descricao=descricao, objeto=objeto ))
 
 
 
@@ -33,7 +41,9 @@ class Lista:
 
 
 
-
+    def cadastrar_fabricante(self):
+        cod = len(self.listaProdutos)
+        objeto =
 
 
 
